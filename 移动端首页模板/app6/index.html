@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;  minimum-scale=1.0; maximum-scale=1.0">
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta name="description" content="MM-兑换mm币-M赏">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon-precomposed" href="images/logo.png?ver=2&amp;src=5210069806&amp;positionid=1902912&amp;cuid=45532021">
+	<style type="text/css">
+		/* CSS Document */
+		/*国内浏览器支持*/
+		@media only screen and (min-width : 320px){/*像素在320px到540px之间*/
+			.list{margin:0px 12px;}
+			header input{display:none;}
+			header .login{margin-left:15px;}
+			.title_listdown .title_name{width:24%;display: inline-block;height:40px;text-align:center;}
+			.title_list{width:89%;}
+			.info_imglist ul li{width:49%;float:left;margin-top:2%;}
+			.info_imglist ul li:nth-child(2n){margin-left:2%;}
+		}
+
+		@media only screen and (min-width : 540px){/*像素在540px以上*/
+			.list{margin:0px 12px;}
+			.info_list{margin:0px;width:49%;display:inline-block;}
+			.title_listdown .title_name{width:12%;display: inline-block;height:40px;text-align:center;}
+			.title_list{width:92%;}
+			.info_imglist ul li{width:49%;float:left;margin-top:2%;}
+			.info_imglist ul li:nth-child(2n){margin-left:2%;}
+		}
+
+		@media only screen  and (min-width : 768px){/*平板：像素在768px以上*/
+			.info_img{margin:0px 12px 0px 10px;}
+			.info_img img{width: 100%;}
+			.list{margin:0px 12px;}
+			.info_list{width: 100%;display: inline-block;}
+			.title_listdown .title_name{width:16%;display: inline-block;height:40px;text-align:center;}
+			.info_imglist ul li{width:32%;float:left;margin-top:2.5%;}
+			.info_imglist ul li:nth-child(n){margin-left:2%;}
+			.info_imglist ul li:nth-child(1),.info_imglist ul li:nth-child(4){margin-left:0;}
+
+		}
+		@media only screen  and (min-width : 768px) and (max-width : 1025px)  and (orientation : landscape) {/*像素在768px到1080px之间且是横屏的*/
+			.info_img{width: 61.5%;display: inline-block;position: relative;float: left;margin:0px 0px 0px 10px;}
+			.example:nth-child(2){float:right;width: 35%;overflow:hidden;}
+			.example:nth-child(2) .list{margin:0px 12px 0px 0px;}
+			.example:nth-child(3) {float: left;width: 63%;}
+			.example:nth-child(3) .info_list{width: 49%;display: inline-block;}
+			.example:nth-child(5){float: left;width: 63%;}
+			.example:nth-child(5) .info_list{width: 100%;display: inline-block;}
+			.info_imglist{float:left;width: 61.5%;}
+			.info_list{width: 100%;display: inline-block;}
+			.list{margin:0px 12px;}
+			.foot{width: 63%;backgroud:#f7f7f7;}
+		}
+
+		@media only screen  and (device-width : 1024px){
+			.title #titlelistmore{display:none;}
+		}
+
+		@media only screen  and (min-width : 1025px) {
+			.nav{width:1024px;display:block;margin:0px auto;}
+			.info_img{width: 62%;display: inline-block;position: relative;float: left;margin:0px 0px 0px 10px;}
+			.example:nth-child(2){float:right;width: 35%;height:1000px;overflow:hidden;}
+			.example:nth-child(2) .list{margin:0px 12px 0px 0px;}
+			.example:nth-child(3) {float: left;width: 63%;}
+			.example:nth-child(3) .info_list{width: 49%;display: inline-block;}
+			.example:nth-child(5){float: left;width: 63%;}
+			.example:nth-child(5) .info_list{width: 49%;display: inline-block;}
+			.info_imglist{float:left;width: 62%;}
+			.info_list{display: inline-block;}
+			.list{margin:0px 12px;}
+			.foot{width: 63%;backgroud:#f7f7f7;}
+			.title #titlelistmore{display:none;}
+		}
+
+
+		@media (device-width : 320px) and (-webkit-min-device-pixel-ratio : 1){/*iphone 4/5/5s:像素为640px*/
+			.title_list{width: 95%;}
+		}
+
+		@media (device-width : 480px) and (-webkit-min-device-pixel-ratio : 2)  and (orientation : landscape){/*iphone 4在横屏的时候处理的*/
+			.title_list{width: 97%;}
+		}
+
+		@media (device-width : 568px) and (-webkit-min-device-pixel-ratio : 2)  and (orientation : landscape){/*iphone 5在横屏的时候处理的*/
+			.title_list{width: 97%;}
+		}
+
+		@media (device-width : 667px) and (-webkit-min-device-pixel-ratio : 2)  and (orientation : landscape){/*iphone 6在横屏的时候处理的*/
+			.title_list{width: 98%;}
+		}
+
+		@media (device-width : 375px) and (-webkit-min-device-pixel-ratio : 2){/*iphone 6:像素为750px*/
+
+		}
+
+		@media (device-width : 414px) and (-webkit-min-device-pixel-ratio : 3){/*iphone 6 plus:像素为1242px*/
+
+		}
+
+
+
+
+
+		@media (device-width : 360px) and (-webkit-min-device-pixel-ratio : 2){/*1小米手机M3:1920x1080像素,441ppi*/
+
+		}
+
+		@media (device-width : 360px) and (-webkit-min-device-pixel-ratio : 2){/*2红米手机1s:1280x720像素,312ppi*/
+
+		}
+
+		@media (device-width : 360px) and (-webkit-min-device-pixel-ratio : 2){/*3三星Galaxy Note II:1280x720像素,267ppi*/
+
+		}
+
+		@media (device-width : 360px) and (-webkit-min-device-pixel-ratio : 2){/*4小米手机M4:1920x1080像素，441ppi*/
+
+		}
+
+		@media (device-width : 360px) and (-webkit-min-device-pixel-ratio : 2){/*5红米note:1280x720像素,267ppi*/
+
+		}
+
+		@media (device-width : 360px) and (-webkit-min-device-pixel-ratio : 2){/*6小米手机2S:1280x720像素，342ppi*/
+
+		}
+
+		@media (device-width : 360px) and (-webkit-min-device-pixel-ratio : 3){/*7三星Galaxy Note III:像素为1080px*/
+
+		}
+
+		@media (device-width : 360px) and (-webkit-min-device-pixel-ratio : 3){/*8三星Galaxy S IV:像素为1080px*/
+
+		}
+
+		@media (device-width : 360px) and (-webkit-min-device-pixel-ratio : 2){/*9三星Galaxy S III:像素为720px*/
+
+		}
+
+		@media (device-width : 360px) and (-webkit-min-device-pixel-ratio : 2){/*10 红米Note 1s:1280x720像素,312ppi*/
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+		/*base*/
+		body{font-family:"Arial","微软雅黑","Heiti SC";font-size:14px;margin:0 auto;-webkit-text-size-adjust:none;word-break:break-all;color:#333; background:#f7f7f7;}
+		table{border-collapse:collapse;border-spacing:0;}
+		fieldset,img{border:0;}
+		address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal; font-style:normal;}
+		ul,ol{list-style:none;}
+		caption,th{text-align:left;}
+		h1,h2,h3,h4,h5,h6{font-weight:normal; font-size:100%;}
+		div{word-wrap:break-word;}
+		center {height:15px;margin:05px 0;}
+		input{vertical-align:middle;outline:none;}
+		a{text-decoration:none;color:#444;}
+		img{vertical-align:top;}
+		/*outline:none用来去掉Google浏览器下，获取焦点后的黄框 */
+		label{font-family:Tahoma, Geneva, sans-serif; vertical-align:middle;}
+		a:link{text-decoration:none;}a:visited{text-decoration:none;}
+		a:hover{text-decoration:none;}a:active{text-decoration:none;}
+		h2,p,ul,li{margin:0;padding:0;}
+		.classDBY4 a{color:#5ea1db;}
+		.nav{background:#f7f7f7;}
+		/*head部分*/
+		header{padding:12px 0px 19px 0px;background: #fff;}
+		header div{display: inline-block;}
+		header .check{float: right;}
+		header .logo img{width: 133px;height:24px; }
+		/*header .check img{width: 24px;height:24px;}*/
+		header .check{background: url("image/search.png");background-size:24px 23px;width: 24px;height: 24px;display: block;float: right;z-index: 99;position: relative;}
+		header .login{background: url("image/login.png");background-size:24px 23px;width: 24px;height: 24px;display: block;float: right;margin:0px 12px 0px 30px;}
+		header input{float: right;border: none;background: #e1e1e1;border-radius: 15px;height: 24px;padding-left: 12px;z-index: 2;position: relative;right: -30px;bottom: 2px;color: #999;}
+		/*标题列表*/
+		.title{height:30px;background: #fff;}
+		.title_list{float: left;height:30px;margin:0px 0px 0px 12px;display: inline-block;overflow : hidden; }
+		.title_list div{text-align:center;line-height:30px;font-size:15px;display: inline-block;margin-right:25px;}
+		.title .title_moredown{width: 24px;height:24px;right: 12px;position:absolute; display: inline-block;float: right;top: 56px;background:url("image/down.png");background-size: 24px;}
+		.title .title_moreup{width: 24px;height:24px;right: 12px;position:absolute; display: inline-block;float: right;top: 56px;background:url("image/up.png");background-size: 24px;}
+		.title_more img{width: 24px;height:24px;}
+		.title_list .active{color:#E23D37;border-bottom:1px solid #E23D37;display: block;height: 29px;}
+		/*标题列表弹窗*/
+		.titlehide{background:#fff;z-index: 999;position: fixed;margin-top: 55px;width: 100%;}
+		.title_listdown {display: inline-block;width: 100%;}
+		.title_listdown .title_name a{border:1px solid #e1e1e1;background:#f3f3f3;padding:5px 15px;border-radius:5px;display: inline-block;}
+		.titlehide .title_moreup{float: right;position:relative;width: 24px;height:24px;right: 12px;background:url("http://a.10086.cn/mmfs/image/28519/28519588.png");background-size: 24px;}
+		/*详情详图*/
+		.info_img{margin:0px 12px;padding-top: 12px;}
+		.info_img img{width:100%;}
+		/*详情列表*/
+		.example{position: relative;}
+		.info_list{height:82px;margin:12px 0px 0px 0px;border-bottom:01px solid #eee;}
+		.info_list .info_list_img{width:88px;height:70px;margin:0px 12px 12px 0px;float: left;}
+		.info_list .info_list_img img{width:100%;}
+		.info_list .info_list_span span:nth-child(1){font-size:16px;color:#333;display: block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+		.info_list .info_list_span span:nth-child(2){font-size:13px;color:#999;margin-top: 7px;line-height: 21px;overflow : hidden;  text-overflow: ellipsis;  display: -webkit-box; -webkit-line-clamp: 2;  -webkit-box-orient: vertical;}
+		/*图片列表*/
+		.info_imglist{margin:12px;overflow: hidden;}
+		.info_imglist .info_imglist_title{font-size:16px;color:#333;display: block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+		.info_imglist ul li{display:inline-block;}
+		.info_imglist li img{width:100%;}
+		/*iframe*/
+		iframe{width:100%;position:fixed;top:147px;display:none;z-index:100;}
+		/*底部*/
+		.foot .foot_title span:nth-child(1){color:#fff;font-size:13px;display:inline-block;width:33px;text-align:center;background:#e23d37;}
+		.foot .foot_title span:nth-child(2){margin-left:8px;display:inline-block;font-size:16px;color:#333;}
+		.foot .foot_title span:nth-child(3){display:inline-block;width:70px;line-height:26px;color:#e23d37;float:right;text-align:center;border:1px solid #e23d37;}
+		.foot_img{padding:12px;}
+		.foot_img img{width:100%;}
+
+	</style>
+	<title>首页</title>
+</head>
+<body>
+<header>
+	<div class="logo"><img src="image/28489034.png" /></div><span class="login"></span><span class="check"></span>
+	<input id="searchtxt" value="北平无战事">
+</header>
+<div class="title">
+	<div class="title_list">
+		<div class="title_name"><a href="#" class="active">要闻</a></div>
+		<div class="title_name"><a href="#">广州</a></div>
+		<div class="title_name"><a href="#">娱乐</a></div>
+		<div class="title_name"><a href="#">体育</a></div>
+		<div class="title_name"><a href="#">科技</a></div>
+		<div class="title_name"><a href="#">汽车</a></div>
+		<div class="title_name"><a href="#">广州</a></div>
+		<div class="title_name"><a href="#">娱乐</a></div>
+		<div class="title_name"><a href="#">体育</a></div>
+		<div class="title_name"><a href="#">科技</a></div>
+		<div class="title_name"><a href="#">汽车</a></div>
+		<div class="title_name"><a href="#">广州</a></div>
+		<div class="title_name"><a href="#">娱乐</a></div>
+		<div class="title_name"><a href="#">体育</a></div>
+		<div class="title_name"><a href="#">科技</a></div>
+		<div class="title_name"><a href="#">汽车</a></div>
+		<div class="title_name"><a href="#">广州</a></div>
+		<div class="title_name"><a href="#">娱乐</a></div>
+		<div class="title_name"><a href="#">体育</a></div>
+		<div class="title_name"><a href="#">科技</a></div>
+		<div class="title_name"><a href="#">汽车</a></div>
+	</div>
+
+	<div class="title_moredown" id="titlelistmore"></div>
+</div>
+<div class="titlehide" id="titlehide" style="display:none;">
+	<p class="title_moreup" id="titlelistup"></p>
+	<div class="title_listdown">
+		<div class="title_name"><a href="#" class="active">要闻</a></div>
+		<div class="title_name"><a href="#">广州</a></div>
+		<div class="title_name"><a href="#">娱乐</a></div>
+		<div class="title_name"><a href="#">体育</a></div>
+		<div class="title_name"><a href="#">科技</a></div>
+		<div class="title_name"><a href="#">汽车</a></div>
+		<div class="title_name"><a href="#">广州</a></div>
+		<div class="title_name"><a href="#">娱乐</a></div>
+		<div class="title_name"><a href="#">体育</a></div>
+		<div class="title_name"><a href="#">科技</a></div>
+		<div class="title_name"><a href="#">汽车</a></div>
+		<div class="title_name"><a href="#">广州</a></div>
+		<div class="title_name"><a href="#">娱乐</a></div>
+	</div>
+</div>
+<div class="nav">
+	<div class="info_img"><img src="image/28489031.jpg" /></div>
+	<section class="example" id="examplelist1">
+		<div class="list">
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28518549.jpg"/></div>
+				<div class="info_list_span"><span>天蚕土豆神作武动乾坤</span><span>土豆力作《武动乾坤》强势袭来，且看少年林动如何踏上为父正名</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28518556.jpg"/></div>
+				<div class="info_list_span"><span>龙破苍穹</span><span>龙飞天变成了龙家的废物少爷，为了变得强大，他不畏强势，踏乾坤、破六道、斩轮回，弑神屠魔杀戮成圣！</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28489454.jpg"/></div>
+				<div class="info_list_span"><span>剑道独神</span><span>两千万点击神作！洞悉门派剑术漏洞，融汇剑意，废柴直指剑道之巅！</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28518553.jpg"/></div>
+				<div class="info_list_span"><span>少年腾飞化龙执手风云</span><span>小镇少年一身傻气，遭人肆意凌辱。浩瀚灵域，等阶森严。且看封印十年记忆的秦烈，腾飞化龙，执手风云！</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28518554.jpg"/></div>
+				<div class="info_list_span"><span>武尊天下</span><span>他无意中获得一个神奇方鼎，离家历练，从此崛起！挥手间八方云动，诸天幻灭，唯我武尊天下！</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28518549.jpg"/></div>
+				<div class="info_list_span"><span>至尊仙皇</span><span>平凡少年穿越而来，意志如刚，得宝丹古卷，修天书奇术，几历生死，终成仙皇，谱写天地传说！</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="example" id="examplelist2">
+		<div class="list">
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28518556.jpg"/></div>
+				<div class="info_list_span"><span>天蚕土豆神作武动乾坤</span><span>土豆力作《武动乾坤》强势袭来，且看少年林动如何踏上为父正名</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28489454.jpg"/></div>
+				<div class="info_list_span"><span>龙破苍穹</span><span>龙飞天变成了龙家的废物少爷，为了变得强大，他不畏强势，踏乾坤、破六道、斩轮回，弑神屠魔杀戮成圣！</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="info_imglist">
+		<div class="info_imglist_title">古天乐出席《星球大战》展览</div>
+		<ul>
+			<li><img src="image/img2.jpg"/></li>
+			<li><img src="image/img3.jpg"/></li>
+			<li><img src="image/img4.jpg"/></li>
+			<li><img src="image/img2.jpg"/></li>
+			<li><img src="image/img3.jpg"/></li>
+			<li><img src="image/img4.jpg"/></li>
+		</ul>
+	</div>
+	<section class="example" id="examplelist3" >
+		<div class="list">
+			<div class="info_list">
+				<div class="info_list_span"><span>武逆乾坤</span><span>古天乐出席《星球大战》展览古天乐出席《星球大战》展览古天乐出席《星球大战》展览古天乐出席《星球大战》展览</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28518554.jpg"/></div>
+				<div class="info_list_span"><span>唯我独尊</span><span>一个经脉尽断、被断定八岁必死的少年，却如妖孽般活了下来。不甘心被命运摆布，于是悍然踏上了逆天之路！</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28489454.jpg"/></div>
+				<div class="info_list_span"><span>剑道独神</span><span>两千万点击神作！洞悉门派剑术漏洞，融汇剑意，废柴直指剑道之巅！</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28518553.jpg"/></div>
+				<div class="info_list_span"><span>少年腾飞化龙执手风云</span><span>小镇少年一身傻气，遭人肆意凌辱。浩瀚灵域，等阶森严。且看封印十年记忆的秦烈，腾飞化龙，执手风云！</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28518554.jpg"/></div>
+				<div class="info_list_span"><span>武尊天下</span><span>他无意中获得一个神奇方鼎，离家历练，从此崛起！挥手间八方云动，诸天幻灭，唯我武尊天下！</span>
+				</div>
+			</div>
+			<div class="info_list">
+				<div class="info_list_img"><img src="image/28518549.jpg"/></div>
+				<div class="info_list_span"><span>至尊仙皇</span><span>平凡少年穿越而来，意志如刚，得宝丹古卷，修天书奇术，几历生死，终成仙皇，谱写天地传说！</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="foot">
+		<div class="foot_img">
+			<img src="image/28489031.jpg">
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+	var mql = window.matchMedia("(orientation: portrait)");
+	$(function() {
+		titlelistmoreclick();
+	})
+	function titlelistmoreclick(){
+		$("#titlelistmore").bind("click",function(e){
+			e.preventDefault();
+			var titlehide=document.getElementById('titlehide');
+			if(titlehide.style.display=='none'){
+				titlehide.style.display='block';
+				$('header').css({"width":"100%","z-index":"999","position":"fixed"});
+				$(".title").hide();
+				var backDiv = '<div id="backBlack" style="position:absolute;left:0px;top:0px;height:' + document.body.scrollHeight + 'px;width:100%;z-index:99;background:rgba(0, 0, 0, 0.5);" class="blackclose">';
+				backDiv += '</div>';
+				$('body').append(backDiv);
+			}
+		});
+		$(".title_moreup").bind("click",function(){
+			$(".titlehide").hide();
+			$(".title").show();
+			$('header').css("position","relative");
+			$('#backBlack').remove();
+		});
+
+		$(".blackclose").bind("click",function(){
+			$(this).hide();
+			$(".titlehide").hide();
+		});
+	}
+</script>
+</body>
+</html>

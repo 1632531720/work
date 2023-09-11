@@ -1,0 +1,1 @@
+$("#getCheckedButton").on("click",function(a){a.preventDefault();alert($("#settingsForm").serialize())});
